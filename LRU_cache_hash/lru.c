@@ -170,8 +170,8 @@ int main() {
 
 	getchar();
 	srand(time(0));
-	for (int i = 0; i < 80; ++i) {
-		//system("cls");
+	for (; ;) {
+		system("cls");
 		int rand_page_num = rand() % 40;
 		printf("pfn = %d Á¢±Ù\n", rand_page_num);
 		int hash_key = hash_32(rand_page_num, 3);
